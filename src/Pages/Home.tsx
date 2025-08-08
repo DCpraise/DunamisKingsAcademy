@@ -263,7 +263,7 @@ const Home = () => {
 
         {/* CTA Button */}
         <div className="mt-10">
-          <Link to='/about'>
+          <Link to='/about' onClick={() => scrollTo(0,0)}>
           <button className="bg-gradient-to-r from-amber-600 via-amber-500 to-amber-400 hover:bg-amber-700 text-white font-medium px-8 py-3 rounded-full transition">
             Learn More About Admissions At DKA
           </button>
