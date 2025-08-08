@@ -20,7 +20,7 @@ const students = [
     img: image4,
   },
   {
-    name: "One of our Best graduating Student",
+    name: "Dunamis Kings Presentation",
     
     img: image13,
   },
@@ -53,7 +53,7 @@ const StudentSection = () => {
           <p className="text-gray-700 leading-relaxed mb-6">
             We are proud of the steady progress our student make academically, socially and emotionlly. We believe that every child learns at their own pace, and our dedicated teachers work closely with each student to ensure continuous growth and improvement.Through a well balaced curriculum, engaging classroom activities, and regular assessments, we track every child's developmet to help them reach their full potential. <br/> Our students are not only gaining knowledge they're building confidence, discovering talents, and developing critical life skills that prepare them for the next stage of their education.
           </p>
-          <Link to='/admission'>
+          <Link to='/admission' onClick={() => scrollTo(0,0)}>
           <button className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-6 py-2 rounded-full transition">
             Learn More &rarr;
           </button>

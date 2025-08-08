@@ -61,11 +61,16 @@ const slideIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   return (
     <>
-    <div className='px-4 '>
+    <div className='px-4 mt-24 '>
       <h1 className='font-bold text-2xl'>View Pictures of just concluded graduation</h1>
      <p className="text-gray-700 leading-relaxed text-base mb-5">
-        At Dunamis Kings Academy, every day is filled with learning, laughter, and unforgettable memories. Browse through our photo gallery to catch a glimpse of the vibrant life within our classrooms, playgrounds, and school events.    
-      </p>
+      At Dunamis Kings Academy, every day is filled with learning, laughter, and unforgettable memories. Browse through our photo gallery to catch a glimpse of the vibrant life within our classrooms, playgrounds, and school events.
+
+       From curious minds exploring new ideas to joyful faces during playtime, every picture tells a story of growth and discovery. Watch how our students shine during cultural days, sports competitions, science fairs, and creative art displays.
+
+       Click on any photo to step into our world — you might hear the echo of laughter from the playground, see the spark of understanding in a student’s eyes, or feel the pride during a prize-giving moment.
+
+        Every snapshot is a reminder that here, we’re not just building knowledge, we’re building character, confidence, and lifelong friendships.      </p>
     <div className="flex items-center mb-10">
       <button
         onClick={() => {
@@ -79,7 +84,7 @@ const slideIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
         </svg>
       </button>
 
-      <div className="w-full max-w-3xl overflow-hidden relative">
+      <div className="w-full max-w-3xl overflow-hidden relative mt-16">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           ref={sliderRef}

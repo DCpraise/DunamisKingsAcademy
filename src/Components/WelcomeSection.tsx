@@ -11,7 +11,7 @@ const WelcomeSection = ({text1, text2, text, image, aboutUs, contactManagement}:
           <h5 className="text-sm font-medium text-gray-600 uppercase tracking-wider">
             {text1}
           </h5>
-          <h2 className="text-3xl font-bold text-black leading-snug">
+          <h2 className="text-2xl font-bold text-black leading-snug">
             {text2}
           </h2>
           <p className="text-gray-700 leading-relaxed text-base">
@@ -23,14 +23,14 @@ const WelcomeSection = ({text1, text2, text, image, aboutUs, contactManagement}:
 
           {/* Buttons */}
           <div className="flex gap-4 flex-wrap pt-2">
-            <Link to='/about'>
+            <Link to='/about' onClick={() => scrollTo(0,0)}>
              <button className="bg-amber-500 text-white px-5 py-3 rounded-full text-sm font-medium hover:bg-amber-300 transition flex items-center gap-2">
                 {aboutUs} <ArrowRight size={16} />
                 </button>
                 </Link>
             
 
-            <Link to='/ContactUs'>
+            <Link to='/ContactUs' onClick={() => scrollTo(0,0)}>
             <button className="bg-amber-100 text-amber-700 px-5 py-3 rounded-full text-sm font-medium hover:bg-pink-200 transition flex items-center gap-2">
               {contactManagement} <ArrowRight size={16} />
             </button>

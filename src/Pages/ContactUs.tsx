@@ -82,8 +82,8 @@ const ContactUs: React.FC = () => {
             <FaPhoneAlt className="text-blue-600 mt-1" />
             <div>
               <h4 className="font-semibold">Phone</h4>
-              <p>+234 812 345 6789</p>
-              <p>+234 901 234 5678</p>
+              <p>+234 806 348 1541</p>
+              <p>+234 706 521 2099</p>
             </div>
           </div>
 
@@ -100,7 +100,7 @@ const ContactUs: React.FC = () => {
             <FaMapMarkerAlt className="text-blue-600 mt-1" />
             <div>
               <h4 className="font-semibold">Address</h4>
-              <p>123 Learning Lane, GRA, Lagos</p>
+              <p>#1, Osuachala Close, Opposite Okwadike filling Station, Melsanah Junction, Akpuoga Nike along Abakaliki Express Road, Enugum Enugu State,</p>
               <p>Nigeria</p>
             </div>
           </div>

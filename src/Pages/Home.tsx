@@ -59,7 +59,7 @@ const Home = () => {
       description: 
       'we are a nurturing community where young minds grow, explore, and thrive. Our mission is to provide a safe, supportive, and inspiring environment that lays a strong foundation for lifelong learning.',
       button: "Learn More",
-      href: "#",
+      href: '/about',
     },
     {
       title: "DKA Core Value",
@@ -67,7 +67,7 @@ const Home = () => {
       description:
         "our core values guide everything we do. We believe in Excellence, Integrity, Respect, Compassion, and Responsibility.",
       button: "Tour Our Campuses",
-      href: "#",
+      href: "/admmission",
     },
     {
       title: "Projects & Innovations",
@@ -114,7 +114,7 @@ const Home = () => {
            DunamisKings - Committed to excellence in every student journey
         </p>
          
-         <Link to='/about'>
+         <Link to='/about' onClick={() => scrollTo(0,0)}>
         <button
           type="button"
           className="mt-8 bg-gradient-to-r from-amber-600 via-amber-500 to-amber-400 text-white px-6 pr-2.5 py-2.5 rounded-full text-sm font-medium flex items-center space-x-2 hover:bg-indigo-700 transition"
@@ -149,10 +149,10 @@ const Home = () => {
     
    <WelcomeSection 
    text1='Welcome To'
-   text2= 'Dunamis Academy'
+   text2= 'Dunamis Kings Academy'
    aboutUs='About Us'
    contactManagement='Contact Management'
-   text=' At Dunamis Kings Academy, we believe that every child is unique, full of potential, and deserving of a joyful, safe, and inspiring start to learning. We are a nuturing school dedicated to helping children grow academically, socially, and emotionlly in a loving and structured environment. from our caring teachers to our child-friendly learning spaces, every detail is designed to spark curiosity, confidence, and creativity. <br/> Whether it’s your child’s first step into shchool or their continued journey through the early years, we’re honored to be a part of it.'
+   text=' At Dunamis Kings Academy, we believe that every child is unique, full of potential, and deserving of a joyful, safe, and inspiring start to learning. We are a nuturing school dedicated to helping children grow academically, socially, and emotionlly in a loving and structured environment. from our caring teachers to our child-friendly learning spaces, every detail is designed to spark curiosity, confidence, and creativity. Whether it’s your child’s first step into shchool or their continued journey through the early years, we’re honored to be a part of it.'
    image={image1} />
 
 
@@ -291,12 +291,13 @@ const Home = () => {
             <div className="p-6">
               <h3 className="text-xl font-semibold text-amber-600 mb-2">{item.title}</h3>
               <p className="text-gray-700 text-sm mb-4">{item.description}</p>
-              <a
-                //href={item.href}
+              <Link
+              onClick={() => scrollTo(0,0)}
+                to={item.href}
                 className="inline-flex items-center gap-2 text-white bg-amber-600 hover:bg-amber-700 transition px-4 py-2 rounded-full text-sm"
               >
                 {item.button} <ArrowRight size={16} />
-              </a>
+              </Link>
             </div>
           </div>
         ))}
